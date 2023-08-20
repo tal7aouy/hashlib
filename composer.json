@@ -1,0 +1,42 @@
+{
+  "name": "tal7aouy/hashlib",
+  "description": "Generates strong, secure passwords that are resistant to brute-force attacks.",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Tal7aouy\\HashLib\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "tal7aouy",
+      "email": "tal7aouy.dev@gmail.com",
+      "homepage": "https://talhaouy.me"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/luxphp/hashlib.git"
+  },
+  "scripts": {
+    "custom-install": [
+      "composer install"
+    ],
+    "test": [
+      "@install",
+      "vendor/bin/pest"
+    ]
+  },
+  "require": {
+    "php": "^8.2"
+  },
+  "require-dev": {
+    "pestphp/pest": "^2.13"
+  },
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  }
+}
